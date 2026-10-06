@@ -1,2 +1,10 @@
 https://zhuanlan.zhihu.com/p/36806077
 https://zhuanlan.zhihu.com/p/33341521
+
+第n轮 
+    命中缓存部分:  Cn = (n-1)*(a+b)=20*(n-1)    千tokens.
+    未命中部分： Bn=a=17 千tokens.
+    总输入：Tn=Bn+Cn=20n-3 千tokens.
+
+    第n轮费用: F(n) = (Bn/1000)*p1 + (Cn/1000)*pc + (b/1000)*p2 = 0.051 + 0.0005(n-1) + 0.018 =0.069 + 0.0005(n-1) = 0.0005n +0.0685
+
